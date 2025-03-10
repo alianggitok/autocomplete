@@ -1,0 +1,99 @@
+/* auto-complete */
+.wf-auto-complete{
+    position:relative;
+    display: inline-block;
+    background-color: #fff;
+    min-width: 100px;
+}
+.wf-auto-complete input{
+    width: 100%;
+    padding-right:18px;
+    border:1px solid #cccccc
+}
+.wf-auto-complete .wf-auto-complete-label{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.wf-auto-complete input[readonly]{
+    cursor: pointer;
+    background-color:white
+}
+.wf-auto-complete input[disabled]{
+    cursor: not-allowed;
+    background-color:#eeeeee
+}
+.wf-auto-complete-clearable input{
+    padding-right:36px;
+}
+.wf-auto-complete .wf-auto-complete-clear{
+    display: block;
+    position:absolute;
+    right:18px;
+    top:0;
+    cursor: pointer;
+    width:14px;
+    height: 100%;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    font-style: normal;
+}
+.wf-auto-complete .wf-auto-complete-arrow{
+    display: block;
+    width:18px;
+    height: 100%;
+    position:absolute;
+    right:0;
+    top:0;
+    background: url('../img/arrow-down.png') center center no-repeat;
+    background-size:50%;
+    cursor: pointer;
+}
+.wf-auto-complete-result{
+    box-sizing: border-box;
+    position:absolute;
+    top:31px;
+    left:0;
+    width: 100%;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1) ;
+    z-index: 100;
+    border:1px solid #ccc;
+    text-align: left;
+}
+.wf-auto-complete-result ul{
+    margin: 0;
+    padding:0;
+    background:white;
+    overflow-y:auto;
+    scroll-behavior: smooth;
+    min-width: 100px;
+    max-height: 300px;
+}
+.wf-auto-complete-result li{
+    margin: 0;
+    padding:0;
+    padding:7px 6px;
+    border-bottom: 1px solid #e1e1e1;
+    cursor:pointer;
+    line-height:16px;
+}
+.wf-auto-complete-result li:hover{
+    background:#f8f8f8
+}
+.wf-auto-complete-result li:last-child{
+    border-bottom: none;
+}
+li.wf-auto-complete-result-item-selected{
+    font-weight: bold;
+}
+li.wf-auto-complete-result-item-pointer{
+    background:#f8f8f8
+}
+.wf-auto-complete-result-total{
+    color:#ccc;
+    text-align: center;
+    cursor: default;
+    padding:6px;
+    background: white;
+    border-top:1px solid #ccc;
+}
